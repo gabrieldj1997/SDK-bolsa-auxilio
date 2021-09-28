@@ -5,6 +5,8 @@ SDK para incluir ao projeto, ao qual visa facilitar o uso da API do SERPRO sobre
 ===== Requisitos ==============
 - PHP
 - Composer
+- Gerar uma chave de acesso pessoal para ultilização da API
+- A chave de acesso é obtida através do gov.br
 
 ===== Instalação ==============
 - Copie o projeto para uma pasta dentro da aplicação
@@ -17,11 +19,11 @@ Documentação
 require 'sdk-api/SerproApi.php';
 
 //Intancializar a classe com a URL base e a chave da API
-$serpro = new SerproApi('http://api.portaldatransparencia.gov.br/api-de-dados', "ee62f3ebb1156b63a3fe831a8a4cbbba");
+$serpro = new SerproApi('http://api.portaldatransparencia.gov.br/api-de-dados', [CHAVE DE ACESSO]);
 
 //Metodo de consulta da bolsa familia por CPF ou NIS
 //Params = 1-AnoMesCompetencia; 2-AnoMesReferencia; 3-CPF ou NIS; 4-Pagina
-$result = $serpro->consultarBolsaCpfNis("202006","202003","01942057113","1");
+$result = $serpro->consultarBolsaCpfNis("202006","202003","00000000000","1");
 
 
 //Metodo de consulta da bolsa familia por municipio
