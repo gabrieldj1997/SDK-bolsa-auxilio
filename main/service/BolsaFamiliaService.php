@@ -1,4 +1,5 @@
-<?
+<?php
+
 namespace org\gov\br\sdk\service;
 
 use org\gov\br\sdk\entity\request\BolsaCpfNisRequest;
@@ -43,3 +44,4 @@ class BolsaFamiliaService extends Service{
         }
     }
 }
+?>

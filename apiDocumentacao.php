@@ -1,6 +1,6 @@
 <?php
 //Carregar a classe da API
-require 'sdk-api/SerproApi.php';
+require dirname(__FILE__).'SerproApi.php';
 
 //Intancializar a classe com a URL base e a chave da API
 $serpro = new SerproApi('http://api.portaldatransparencia.gov.br/api-de-dados', "ee62f3ebb1156b63a3fe831a8a4cbbba");

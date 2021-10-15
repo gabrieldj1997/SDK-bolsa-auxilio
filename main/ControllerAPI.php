@@ -2,6 +2,8 @@
 
 namespace org\gov\br\sdk;
 
+require dirname(__FILE__) . '/../vendor/autoload.php';
+
 use org\gov\br\sdk\service\AuxilioService;
 use org\gov\br\sdk\service\BolsaFamiliaService;
 
@@ -24,7 +26,7 @@ class ControllerAPI {
         }
 
         $this->bolsaFamiliaService = new BolsaFamiliaService($urlBase, $chaveApi);
-        $this->auxilioService = new AuxilioService($urlBase, $chaveApi);
+        // $this->auxilioService = new AuxilioService($urlBase, $chaveApi);
     }
 }
 

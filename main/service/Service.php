@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace org\gov\br\sdk\service;
 
@@ -162,3 +162,4 @@ class Service {
         return $this;
     }
 }
+?>
