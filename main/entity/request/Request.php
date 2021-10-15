@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace org\gov\br\sdk\entity\request;
 
@@ -14,3 +14,5 @@ class Request
         return $tmp;
     }
 }
+
+?>

@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace org\gov\br\sdk\entity\response;
 
@@ -20,3 +20,4 @@ class Response{
         return $tmp;
     }
 }
+?>

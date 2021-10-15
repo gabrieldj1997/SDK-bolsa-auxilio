@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace org\gov\br\sdk\entity\request;
 
@@ -61,3 +61,5 @@ class AuxilioMunicipioRequest extends Request {
         return $this;
     }
 }
+
+?>

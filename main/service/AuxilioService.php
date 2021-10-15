@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace org\gov\br\sdk\service;
 
@@ -46,3 +46,4 @@ class AuxilioService extends Service {
         }
     }
 }
+?>

@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace org\gov\br\sdk\entity\request;
 
@@ -80,3 +80,4 @@ class BolsaParcelaSaqueNis extends Request{
         return $this;
     }
 }
+?>

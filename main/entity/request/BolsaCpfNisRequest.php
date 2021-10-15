@@ -80,3 +80,5 @@ class BolsaCpfNisRequest extends Request{
         return $this;
     }
 }
+
+?>

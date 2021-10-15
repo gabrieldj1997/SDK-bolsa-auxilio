@@ -26,7 +26,7 @@ class ControllerAPI {
         }
 
         $this->bolsaFamiliaService = new BolsaFamiliaService($urlBase, $chaveApi);
-        // $this->auxilioService = new AuxilioService($urlBase, $chaveApi);
+        $this->auxilioService = new AuxilioService($urlBase, $chaveApi);
     }
 }
 

@@ -1,5 +1,7 @@
 <?php
 
+// namespace SdkApiSerpro;
+
 require_once dirname(__FILE__) . '/vendor/autoload.php';
 
 use org\gov\br\sdk\ControllerAPI;
@@ -55,8 +57,8 @@ class SerproApi{
     public function consultarAuxilioBeneficiarioMunicipio($codigoIbge, $mesAno, $pagina){
         $auxilioBeneficiarioMunicipio = new AuxilioBeneficiarioMunicipioRequest();
         $auxilioBeneficiarioMunicipio->setCodigoIbge($codigoIbge);
-        $auxilioBeneficiarioMunicipio->setCodigoIbge($mesAno);
-        $auxilioBeneficiarioMunicipio->setCodigoIbge($pagina);
+        $auxilioBeneficiarioMunicipio->setMesAno($mesAno);
+        $auxilioBeneficiarioMunicipio->setPagina($pagina);
 
         $response = $this->apiService->auxilioService->consultarAuxilioBeneficiarioMunicipio($auxilioBeneficiarioMunicipio);
         return $response;
